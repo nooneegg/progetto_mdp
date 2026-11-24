@@ -5,8 +5,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # si apre il dataset originale, nella stessa cartella dello script
+# cartella in cui si trova lo script (src)
 cartella = Path(__file__).resolve().parent
-file_excel = cartella / "dataset_r.xlsx"
+
+# dataset nella cartella dataset, allo stesso livello di src
+file_excel = cartella.parent / "dataset" / "dataset_r.xlsx"
+
+# lettura del file Excel
 df = pd.read_excel(file_excel, sheet_name="Dati_Strutturati")
 
 # si sistemano il nome del paese e il tipo dell'anno, come negli altri grafici

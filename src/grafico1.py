@@ -9,10 +9,14 @@ from matplotlib.colors import Normalize
 from matplotlib.cm import ScalarMappable
 from matplotlib.patches import Patch
 
-# file excel da mettere nella stessa cartella dello script
+# cartella in cui si trova lo script (src)
 cartella = Path(__file__).resolve().parent
+
+# dataset Excel nella cartella dataset
 file_excel = cartella.parent / "dataset" / "dataset_r.xlsx"
-file_mappa = cartella / "ne_110m_admin_0_countries.geojson"
+
+# mappa GeoJSON nella cartella dataset
+file_mappa = cartella.parent / "dataset" / "ne_110m_admin_0_countries.geojson"
 
 if not file_excel.exists():
     raise FileNotFoundError(f"Dataset mancante: {file_excel}")

@@ -17,7 +17,14 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 
 #creo dataframe caricandoci tutto il dataset 
-df = pd.read_excel("dataset_c.xlsx", sheet_name="Dati_Strutturati", engine="openpyxl")
+# cartella in cui si trova lo script (src)
+cartella = Path(__file__).resolve().parent
+
+# percorso del dataset nella cartella dataset
+file_excel = cartella.parent / "dataset" / "dataset_c.xlsx"
+
+# lettura del file Excel
+df = pd.read_excel(file_excel, sheet_name="Dati_Strutturati", engine="openpyxl")
 
 #riempio le celle vuote dei paesi, cosi script capisce subito a che paese corrisponde una certa riga altrimenti avremmo dovuto fare più controlli
 df["Paese"] = df["Paese"].ffill().str.strip()

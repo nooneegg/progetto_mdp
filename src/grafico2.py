@@ -4,9 +4,14 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# si apre il file excel che deve essere nella stessa cartella dello script
-cartella = Path(__file__).resolve().parent
-file_excel = cartella / "dataset_r.xlsx"
+# cartella in cui si trova questo script (src)
+cartella_src = Path(__file__).resolve().parent
+
+# cartella principale del progetto
+cartella_progetto = cartella_src.parent
+
+# percorso del dataset nella cartella data
+file_excel = cartella_progetto / "data" / "dataset_r.xlsx"
 # si usa la libreria pandas per aprire il file e dargli un nome
 df = pd.read_excel(
     file_excel, 
