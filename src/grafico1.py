@@ -131,11 +131,10 @@ barra.outline.set_visible(False)
 fig.text(0.22, 0.191, "Popolazione che utilizza Internet (%)", color="#334C5B",
          fontsize=11, fontweight="normal", ha="left")
 
-# legenda per i paesi senza dati e riferimento all'Italia.
+# legenda per i paesi senza dati
 fig.legend(
     handles=[
         Patch(facecolor="#C9D1D8", edgecolor="none", label="Dato assente"),
-        Patch(facecolor="none", edgecolor="#D62728", linewidth=2, label="Italia"),
     ],
     loc="lower right", bbox_to_anchor=(0.96, 0.12),
     frameon=False, ncol=1, fontsize=10,
