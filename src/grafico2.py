@@ -11,7 +11,7 @@ cartella_src = Path(__file__).resolve().parent
 cartella_progetto = cartella_src.parent
 
 # percorso del dataset nella cartella data
-file_excel = cartella_progetto / "data" / "dataset_r.xlsx"
+file_excel = cartella_progetto / "dataset" / "dataset_r.xlsx"
 # si usa la libreria pandas per aprire il file e dargli un nome
 df = pd.read_excel(
     file_excel, 
@@ -85,5 +85,5 @@ fig.text(0.5, 0.01,
 fig.tight_layout(rect=(0, 0.04, 1, 0.94))
 
 #si salva il grafico
-fig.savefig(cartella_src / "grafico_02.png", dpi=500, bbox_inches="tight")
+fig.savefig(cartella_src / "grafico_2.png", dpi=300, bbox_inches="tight")
 plt.show()
