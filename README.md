@@ -8,4 +8,3 @@ https://data.worldbank.org/indicator/IT.NET.BBND.P2<br>
 https://data.worldbank.org/indicator/NY.GDP.PCAP.KD<br>
 https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS<br>
 https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS<br>
-https://scikit-learn.org/stable/user_guide.html<br>
