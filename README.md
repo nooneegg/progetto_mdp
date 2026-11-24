@@ -2,7 +2,7 @@
 % di popolazione che usa internet nei diversi paesi del mondo (2004-2024)
 https://data.worldbank.org/indicator/IT.NET.USER.ZS
 
-oltre a questo dataset abbiamo scelto di utilizzare altriindici di sviluppo economico e infrastrutturale<br>
+oltre a questo dataset abbiamo scelto di utilizzare altri indici di sviluppo economico e infrastrutturale<br>
 https://data.worldbank.org/indicator/IT.CEL.SETS.P2<br>
 https://data.worldbank.org/indicator/IT.NET.BBND.P2<br>
 https://data.worldbank.org/indicator/NY.GDP.PCAP.KD<br>
