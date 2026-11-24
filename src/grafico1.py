@@ -156,7 +156,7 @@ fig.text(
 )
 
 #crea un PNG ad alta risoluzione 
-output = cartella / "grafico4_mappa_mondiale.png"
+output = cartella / "grafico_1.png"
 fig.savefig(output, dpi=300, facecolor="white", bbox_inches="tight")
 print(f"\nImmagine salvata: {output}")
 print(f"Paesi con dato valido nel file: {n_valori}")

@@ -115,7 +115,7 @@ fig.text(
     ha="center", fontsize=9, color="#52606D",
 )
 fig.tight_layout(rect=(0, 0.045, 1, 1))
-fig.savefig(cartella / "grafico_02_scatterplot.png", dpi=500, bbox_inches="tight")
+fig.savefig(cartella / "grafico_3.png", dpi=500, bbox_inches="tight")
 plt.show()
 
 print(f"Osservazioni nel grafico (2024): {len(dati)}")

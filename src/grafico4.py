@@ -82,5 +82,5 @@ fig.text(
 fig.tight_layout(rect=(0, 0.055, 1, 1))
 
 # si esporta la figura come immagine ad alta risoluzione per PowerPoint
-fig.savefig(cartella / "grafico_03_heatmap.png", dpi=500, bbox_inches="tight")
+fig.savefig(cartella / "grafico_4.png", dpi=500, bbox_inches="tight")
 plt.show()

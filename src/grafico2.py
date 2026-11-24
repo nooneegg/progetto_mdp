@@ -85,5 +85,5 @@ fig.text(0.5, 0.01,
 fig.tight_layout(rect=(0, 0.04, 1, 0.94))
 
 #si salva il grafico
-fig.savefig(cartella / "grafico_01_internet.png", dpi=500, bbox_inches="tight")
+fig.savefig(cartella_src / "grafico_02.png", dpi=500, bbox_inches="tight")
 plt.show()
